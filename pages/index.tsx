@@ -41,6 +41,7 @@ export default function Home() {
 
         <TeamSection />
         <WorkGallery />
+        
 
         <section id="contacto" className="py-16 bg-gray-50">
           <div className="container">
