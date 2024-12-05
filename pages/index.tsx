@@ -7,14 +7,56 @@ import Head from 'next/head';
 import Image from "next/image";
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react'
 
+
+
+const especialidades = [
+  {
+    title: "Especialización en Medicina Ortopédica Europea",
+    description: "Tratamientos avanzados para el diagnóstico y manejo de trastornos musculoesqueléticos. Utilizamos técnicas basadas en evidencia para aliviar el dolor, restaurar la funcionalidad y mejorar la calidad de vida. Especialistas capacitados en la metodología ortopédica europea, que incluye evaluación precisa, terapia manual, y programas de rehabilitación personalizados.",
+    image: "/centroE.jpg", // Asegúrate de que esta imagen exista en la carpeta public
+  },
+];
+
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex  min-h-screen flex-col">
     
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
-        
+        <section id="especialidades" className="py-16 bg-gray-50">
+  <div className="container">
+    <h2 className="text-3xl font-bold text-center mb-12">Nuestras Especialidades</h2>
+    <div
+      className={`grid ${
+        especialidades.length === 1
+          ? "grid-cols-1 justify-items-center"
+          : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      }`}
+    >
+      {especialidades.map((especialidad, index) => (
+        <div
+          key={index}
+          className="p-6 rounded-lg border bg-card max-w-md mx-auto"
+        >
+          <div className="relative h-48 w-full">
+            <Image
+              src={especialidad.image}
+              alt={especialidad.title}
+              fill
+              className="object-cover"
+            />
+          </div>
+          <h3 className="text-xl font-bold mb-2">{especialidad.title}</h3>
+          <p className="text-muted-foreground">{especialidad.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+
         <section id="servicios" className="py-16">
           <div className="container">
             <h2 className="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
