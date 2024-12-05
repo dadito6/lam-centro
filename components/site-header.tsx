@@ -14,7 +14,6 @@ export function SiteHeader() {
             alt="Logo LAM" 
             width={50} // Ajusta el tamaño según sea necesario
             height={50} // Ajusta el tamaño según sea necesario
-            
             className="h-8 w-8" // Ajusta el tamaño en Tailwind CSS
           />
         </div>
@@ -52,4 +51,10 @@ export function SiteHeader() {
     </header>
   )
 }
+
+
+
+
+
+
 

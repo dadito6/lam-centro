@@ -3,12 +3,14 @@ import { HeroSection } from "@/components/hero-section"
 import { TeamSection } from "@/components/team-section"
 import { WorkGallery } from "@/components/work-gallery"
 import { Button } from "@/components/ui/Button"
+import Head from 'next/head';
 import Image from "next/image";
 import { MapPin, Phone, Mail, Instagram } from 'lucide-react'
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
+    
       <SiteHeader />
       <main className="flex-1">
         <HeroSection />
