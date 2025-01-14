@@ -61,9 +61,15 @@ export function MenuPage() {
                 <Link href="/especialidad/ortopedia" className="text-gray-800 hover:text-blue-600 mb-8">
                   Especialidad
                 </Link>
-                <Link href="https://api.whatsapp.com/send/?phone=2215256816&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-green-500 mb-8">
-                  Contactanos
-                </Link>
+                <Link
+  href="https://api.whatsapp.com/send/?phone=2215256816&text&type=phone_number&app_absent=0"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="menu-link mb-8"
+>
+  Contactanos
+</Link>
+
               </div>
             </div>
           </div>

@@ -33,11 +33,7 @@ export function HeroSection() {
         <Link
           href="https://api.whatsapp.com/send/?phone=2215256816&text&type=phone_number&app_absent=0"
           target="_blank"
-<<<<<<< HEAD
-          className="bg-green-500 text-white py-4 px-6 rounded-lg hover:bg-green-600 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-6"
-=======
-          className="bg-green-500 text-white py-4 px-6 rounded-lg hover:bg-green-600 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-8"
->>>>>>> 1a2904ff1cbe4db1c9d6f68597c00de02be9ef2e
+          className=" button bg-green-500 text-white py-4 px-6 rounded-lg hover:bg-green-600 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-6"
         >
           Agenda tu consulta
         </Link>
