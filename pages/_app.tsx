@@ -1,16 +1,14 @@
 import { AppProps } from 'next/app';
-import Head from 'next/head'; // Importa el componente Head
-import '../styles/globals.css'; // Asegúrate de que esta línea esté presente
+import Head from 'next/head';
+import '../globals.css'; // Asegúrate de importar el archivo de estilos
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <Head>
-        <title>Centro LAM</title> {/* Título de la página */}
-        <link rel="icon" href="/lam.png" sizes="32x32" /> {/* Ruta al ícono (favicon) */}
-      </Head>
-      <Component {...pageProps} />
-    </>
+    <div className="min-h-screen">
+      <div className="background animated-gradient"> {/* Fondo animado */}
+        <Component {...pageProps} />
+      </div>
+    </div>
   );
 }
 
