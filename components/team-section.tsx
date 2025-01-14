@@ -3,19 +3,19 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/Avatar"
 
 const team = [
   {
-    name: "Dr. Nombre Apellido",
-    role: "Médico Deportólogo",
-    image: "/placeholder.svg?height=200&width=200",
+    name: "Marcos Valent",
+    role: "Kinesiologo",
+    image: "/negro.jpg",
   },
   {
     name: "Lic. Nombre Apellido",
     role: "Kinesiólogo",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "",
   },
   {
     name: "Lic. Nombre Apellido",
     role: "Fisioterapeuta",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "",
   },
 ]
 

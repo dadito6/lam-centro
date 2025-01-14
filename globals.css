@@ -1,0 +1,386 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --border: 214.3 31.8% 91.4%; /* Define el color de borde */
+}
+
+@layer base {
+  .border-border {
+    border-color: var(--border); /* Aplica el color de borde */
+  }
+
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+/* Estilos para el menú desplegable */
+/* styles.css */
+/* styles.css */
+
+.menu-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+.menu-button:active {
+  transform: scale(0.9);
+}
+
+
+
+.menu {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.menu-open {
+  transform: translateX(0);
+}
+
+.text-red-600 {
+  color: #0ce7b2;
+}
+.text-red-600:hover {
+  color: #0ce7b2;
+  transition: color 0.2s ease-in-out;
+}
+
+
+/* Secciones */
+.header {
+  @apply py-4 bg-white/90 backdrop-blur-sm; /* Fondo semi-transparente con efecto de desenfoque */
+  position: sticky;
+  top: 0;
+  z-index: 50; /* Asegura que el encabezado esté por encima del contenido */
+}
+
+.footer {
+  @apply py-4 bg-white/90 backdrop-blur-sm; /* Fondo semi-transparente con efecto de desenfoque */
+}
+
+.section {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilos para la sección de especialidades */
+.especialidades {
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Asegura que el elemento sea un contenedor de contexto para el z-index */
+  z-index: 10; /* Asegura que las especialidades estén por encima de otros elementos */
+}
+.especialidades ul {
+  font-size: 1.3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+.especialidades ul li {
+  margin-bottom: 1rem;
+}
+
+/* Estilos para la sección de especialidades */
+.detalle ul {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666;
+}
+
+.detalle ul li {
+  margin-bottom: 1.2rem;
+}
+
+.detalle ul li::before {
+  content: "\2022";
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+
+.especialidades ul li::before {
+  content: "\2022";
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+
+
+.especialidades:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.especialidades h3 {
+  font-size: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+}
+
+.especialidades p {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  
+  color: #666;
+}
+
+/* Estilos para el título */
+.clicked-tittle {
+  font-family: 'Montserrat', sans-serif;
+  font-size:3.9rem;
+  padding: 10px;  
+  border-bottom: 0.1px solid gray;
+  font-weight: bold;
+}
+.clicked-key-points{
+  font-size: 1.2rem;
+}
+/* Estilos para el botón */
+.button { 
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* Estilos para la descripción */
+.clicked-description {
+  font-family: 'Merriweather', serif;
+  font-size: 1.9rem;
+  line-height: 1;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.especialidad-button {
+  margin-top: 1rem; /* Espacio entre el contenido y el botón */
+  color: #60a5fa;
+}
+
+/* Estilos para el degradado en la imagen */
+.image-fade {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.image-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
+}
+
+/* Estilos para el icono de especialidad */
+.especialidades img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+/* Contenedor para el contenido */
+.container {
+  @apply mx-auto px-4; /* Centra el contenido y añade espacio interno */
+  max-width: 1200px; /* Limita el ancho del contenido */
+}
+
+/* Estilos para el degradado en la imagen */
+.image-fade {
+  position: relative;
+  overflow: hidden;
+}
+.lam-image {
+  animation: load-lam 2s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes load-lam {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .footer-logo h2 {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.lam-image.loaded {
+  animation: none;
+  transform: translateX(0);
+}
+
+.image-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Ajusta la altura del degradado */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.9), transparent);
+}
+
+/* Estilos para el degradado en la imagen del HeroSection */
+.hero-image-fade {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image-fade::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Ajusta la altura del degradado */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1), /* Color de fondo estático (blanco) */
+    rgba(255, 255, 255, 0)  /* Transparente en la parte superior */
+  );
+}
+
+/* globals.css */
+/* globals.css */
+/* globals.css */
+/* globals.css */
+.menu-container {
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.menu-container.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.menu-button {
+  transition: none;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
