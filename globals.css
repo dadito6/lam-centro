@@ -258,3 +258,22 @@ html {
 .menu-link:active {
   color: #276749; /* Verde aún más oscuro al hacer clic */
 }
+
+
+
+
+.map-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.map-container iframe {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}

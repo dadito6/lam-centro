@@ -95,16 +95,19 @@ const Home = () => {
       <p className="text-lg font-bold text-white mb-2 sm:text-base">Ubicacion :   Plaza 19 de Noviembre e/ Diag. 96 y 25 (44 y 25) La Plata Bs.As.</p>
     </div>
     <div className="flex justify-end">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d833118.0815780339!2d-58.8985191!3d-35.3465248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dd8f2db09453%3A0xdcef35c9551c789a!2sCentro%20LAM%20Kinesiologia%20Y%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1736823847773!5m2!1ses-419!2sar&zoom=25"
-        width="100%"
-        height="300"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
+  <div className="map-container">
+    
+    <iframe
+      src={`https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d833118.0815780339!2d-58.8985191!3d-35.3465248!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2dd8f2db09453%3A0xdcef35c9551c789a!2sCentro%20LAM%20Kinesiologia%20Y%20Entrenamiento!5e0!3m2!1ses-419!2sar!4v1736823847773!5m2!1ses-419!2sar&zoom=30&style=dark&marker=color%3Ared`}
+      width="100%"
+      height="300"
+      style={{ border: 0, backgroundColor: 'transparent' }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>
   </div>
   <div className="container mx-auto px-4 flex justify-start items-start" style={{ position: 'relative' }}>
     <div className="flex flex-col items-start footer-logo" style={{ position: 'relative', top: 0, left: 0 }}>
