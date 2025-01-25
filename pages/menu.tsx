@@ -40,7 +40,7 @@ export function MenuPage() {
       </header>
 
       <main className="flex-1 overflow-y-auto">
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 ">
           <h1 className="text-5xl font-bold text-center mb-20">Menú</h1>
         
           <div className="flex justify-center items-center">
@@ -55,12 +55,18 @@ export function MenuPage() {
                 <Link href="/" className="text-gray-800 hover:text-blue-600 mb-8">
                   Inicio
                 </Link>
+               
               </div>
-              <div className="border-l border-gray-900 h-48 w-1 border-2 border-gray-900 " />
+              <div className="border-l border-gray-900 h-48 w-1 border-2 " />
               <div className="flex flex-col justify-center items-center ml-8 text-4xl font-bold md:text-3xl sm:text-2xl xs:text-xl">
                 <Link href="/especialidad/ortopedia" className="text-gray-800 hover:text-blue-600 mb-8">
                   Especialidad
                 </Link>
+
+                <Link href="/sobre-nosotros" className="text-gray-800 hover:text-blue-600 mb-8">
+                  Sobre Nosotros
+                </Link>
+
                 <Link
   href="https://api.whatsapp.com/send/?phone=2215256816&text&type=phone_number&app_absent=0"
   target="_blank"
