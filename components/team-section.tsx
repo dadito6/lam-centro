@@ -6,12 +6,12 @@ import 'react-multi-carousel/lib/styles.css';
 const team = [
   {
     name: "Marcos Valent",
-    role: "Kinesiologo",
+    role: "Co-Director",
     image: "/kine1.jpg",
   },
   {
     name: "Ariel Ferrer",
-    role: "Kinesiólogo",
+    role: "Director",
     image: "/kine2.jpg",
   },
   {
