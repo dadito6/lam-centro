@@ -36,7 +36,7 @@ export function HeroSection() {
           target="_blank"
           className=" button bg-green-500 text-white py-4 px-6 rounded-lg hover:bg-green-600 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-6"
         >
-          Agenda tu consulta
+          Programa tu rehabilitación
         </Link>
       </div>
     </section>
