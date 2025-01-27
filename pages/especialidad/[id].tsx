@@ -94,8 +94,8 @@ const EspecialidadDetalle = () => {
             </div>
 
   {/* Título y descripción */}
-<h1 className={`text-3xl font-bold text-white text-center mb-6`}>{especialidad.title}</h1>
-<p className="text-lg text-white text-center mb-5">{especialidad.description}</p>
+<h1 className={`text-3xl font-bold text-white text-center mb-6 titulo-especialiad`}>{especialidad.title}</h1>
+<p className="text-lg text-white text-center mb-4 descripcion-especialidad">{especialidad.description}</p>
 
   {/* Botón "Más Información" modificado */}
 <div className="flex justify-center my-5"> {/* Agregado my-5 para margen vertical */}

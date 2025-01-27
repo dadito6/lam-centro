@@ -86,7 +86,7 @@ export function TeamSection() {
     <Card key={index} className="text-center">
       <CardContent className="pt-6">
         <Avatar className="w-32 h-32 mx-auto mb-4 ">
-          <AvatarImage src={member.image} alt={member.name} />
+          <AvatarImage src={member.image} alt={member.name}   />
           <AvatarFallback>{member.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
         </Avatar>
         <h3 className="font-bold text-xl mb-1 menu-kine">{member.name}</h3>

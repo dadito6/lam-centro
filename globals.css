@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@900&display=swap');
+
 :root {
   --border: 214.3 31.8% 91.4%; /* Define el color de borde */
 }
@@ -21,7 +23,7 @@
 /* Estilos generales */
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  
   line-height: 1.5;
 }
 img {
@@ -68,6 +70,7 @@ img:hover {
   position: relative; /* Importante para los elementos que se mueven */
   width: 100%;
 }
+
 
 
 
@@ -264,7 +267,13 @@ html {
 }
 
 
-
+.footer-container{
+  font-family: "Lexend Giga",  sans-serif;
+  
+}
+.footer-container p{
+  font-size: 1.2rem;
+}
 
 .map-container {
   background-color: #f7f7f7;
@@ -272,6 +281,15 @@ html {
   border: 1px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  transform: perspective(1000px);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Para el efecto de hover 3D */
+
+
+.map-container:hover {
+  transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
 }
 
 
@@ -285,12 +303,16 @@ html {
 
 .menu-carousel {
   margin-bottom: 20px;
+  color: #4a5568;
 }
 .menu-kine {
   margin-bottom: 5px;
+  
 }
 .menu-tipoTrabajo{
   margin-bottom: 20px;
+  color:gray;
+  font-size: small;
 }
 
 
@@ -317,6 +339,16 @@ html {
   color: #4a5568;
 }
 
+.titulo-especialiad{
+  font-family: "Lexend Giga",sans-serif;
+  font-size: 2.8rem;
+}
+
+.descripcion-especialidad{
+  font-family: "Lexend Giga",sans-serif;
+  font-size: 1.6rem;
+}
+
 @media (max-width: 768px) {
   .sobre-nosotros-container {
     padding: 1rem;
@@ -325,4 +357,8 @@ html {
   .sobre-nosotros-text {
     font-size: 1rem;
   }
+
 }
+
+
+

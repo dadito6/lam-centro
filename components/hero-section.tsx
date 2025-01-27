@@ -15,6 +15,7 @@ export function HeroSection() {
           src="/kinesio.jpg" // Reemplaza con la ruta de tu imagen
           alt="LAM Centro de Rehabilitación"
           fill
+          rel='preload'
           className="object-cover opacity-90" /* Reducir opacidad de la imagen */
           priority
         />
@@ -23,7 +24,7 @@ export function HeroSection() {
       </div>
 
       {/* Contenido superpuesto */}
-      <div className="relative container flex flex-col justify-center items-center text-center py-24">
+      <div className="relative container flex flex-col justify-center items-center text-center py-28">
         <h1 className="text-6xl font-bold text-white max-w-2xl mb-12">
           Rehabilitación y Medicina Deportiva Especializada
         </h1>
