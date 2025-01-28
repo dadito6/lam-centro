@@ -5,19 +5,29 @@ import 'react-multi-carousel/lib/styles.css';
 
 const team = [
   {
-    name: "Marcos Valent",
-    role: " Kinesiologo Co-Director",
-    image: "/kine1.jpg",
-  },
-  {
     name: "Ariel Ferrer",
     role: "Kinesiologo Director",
     image: "/kine2.jpg",
   },
   {
+    name: "Marcos Valent",
+    role: " Kinesiologo Co-Director",
+    image: "/kine1.jpg",
+  },
+  {
+    name: "Leonardo Ferrando",
+    role: "Kinesiologo",
+    image: "/kine6.jpg",
+  },
+  {
     name: "Daina Grosso",
     role: "Kinesiologa",
     image: "/kine3.jpg",
+  },
+  {
+    name: "Agustina Carosillo",
+    role: "Kinesiologa",
+    image: "/kine7.jpg",
   },
   {
     name: "Tomas Éder",
@@ -29,16 +39,8 @@ const team = [
     role: "Kinesiologa",
     image: "/kine5.jpg",
   },
-  {
-    name: "Leonardo Ferrando",
-    role: "Kinesiologo",
-    image: "/kine6.jpg",
-  },
-  {
-    name: "Agustina Carosillo",
-    role: "Kinesiologa",
-    image: "/kine7.jpg",
-  },
+  
+
 
 ]
 
