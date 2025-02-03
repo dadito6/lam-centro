@@ -33,7 +33,8 @@ const team = [
   },
   {
     name: "Agustina Carosillo",
-    role: "Kinesiologa",
+    role: "  Kinesiologa plantel profesional de primera división fut fem Gelp  |  Kinesiologa en Centro LAM  |  Kinesiologa en CIK |  Profesora prácticas profesionales supervisadas UCALP",
+    Formación: " Módulo I-a “Introducción al razonamiento clínico”  |  Módulo I-b “Columna lumbar”Global Cyriax Institute Orthopaedic Medicine  |  Certificación MEP Sport y MEP Beauty  |  Programa de post grado columna lumbar The McKenzie Institute",
     image: "/kine7.jpg",
   },
   {
@@ -70,7 +71,7 @@ export function TeamSection() {
   return (
     <section id="equipo" className="py-16 bg-gray-50">
       <div className="container">
-        <h2 className="text-3xl font-bold text-center mb-12">Nuestro Equipo</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 titulo-nuestroE">Nuestro Equipo</h2>
         <Carousel
           swipeable={true}
           draggable={false}
@@ -88,32 +89,36 @@ export function TeamSection() {
           itemClass="carousel-item"
           renderButtonGroupOutside={true}
         >
-          {team.map((member, index) => (
-            <Card key={index} className="text-center">
-              <CardContent className="pt-6">
-                <Avatar className="w-32 h-32 mx-auto mb-4">
-                  <AvatarImage src={member.image} alt={member.name} />
-                  <AvatarFallback>
-                    {member.name.split(" ").map((n) => n[0]).join("")}
-                  </AvatarFallback>
-                </Avatar>
-                <h3 className="font-bold text-xl mb-1 menu-kine">
-                  {member.name}
-                </h3>
-                {member.titulo && (
-                  <p className="text-muted-foreground menu-tipoTrabajo">
-                    {member.titulo}
-                  </p>
-                )}
-                <p className="text-muted-foreground menu-tipoTrabajo">
-                  {member.name === "Marcos Valent"
-                    ? renderRoleWithFlags(member.role)
-                    : member.role}
-                </p>
-                <p className="text-muted-foreground menu-tipoTrabajo">{member.Formación} </p>
-              </CardContent>
-            </Card>
-          ))}
+        {team.map((member, index) => (
+  <Card key={index} className="text-center">
+    <CardContent className="pt-6">
+      <Avatar className="w-32 h-32 mx-auto mb-4">
+        <AvatarImage src={member.image} alt={member.name} />
+        <AvatarFallback>
+          {member.name.split(" ").map((n) => n[0]).join("")}
+        </AvatarFallback>
+      </Avatar>
+      <h3 className="font-bold text-xl mb-1 menu-kine">
+        {member.name}
+      </h3>
+      {member.titulo && (
+        <p className="text-muted-foreground menu-tipoTrabajo">
+          {member.titulo}
+        </p>
+      )}
+      <p className="text-muted-foreground menu-tipoTrabajo">
+        {member.name === "Marcos Valent"
+          ? renderRoleWithFlags(member.role)
+          : member.role}
+      </p>
+      {member.Formación && (
+        <p className="text-muted-foreground menu-tipoTrabajo">
+         {member.Formación}
+        </p>
+      )}
+    </CardContent>
+  </Card>
+))}
         </Carousel>
       </div>
     </section>
