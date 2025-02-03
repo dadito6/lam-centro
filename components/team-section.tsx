@@ -3,7 +3,7 @@ import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/Avatar";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
-import { renderRoleWithFlags } from "../pages/utils/renderRoleWithFlags";
+import { renderRoleWithFlags } from "../utils/renderRoleWithFlags";
 
 const team = [
   {
