@@ -128,8 +128,22 @@ const Home = () => {
         <h2 className="text-3xl font-bold text-white uppercase sm:text-2xl">CENTRO LAM</h2>
       </div>
     
+
+      <button
+  className="bg-blue-600 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded flex items-center"
+  onClick={() => window.open("https://www.instagram.com/lamcentro/", "_blank")}
+>
+  <i className="fab fa-instagram mr-2" />
+  Síguenos en Instagram
+</button>
+
+
     </div>
+
+
+    
   </div>
+
 </footer>
         </main>
       </div>
