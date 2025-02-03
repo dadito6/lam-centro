@@ -80,10 +80,10 @@ const Home = () => {
               </div>
             </div>
           </section>
-          <Testimonios />
+          
           <WorkGallery />
           <TeamSection />
-          
+          <Testimonios />
 
           <footer className="bg-blue-500 py-4 text-white footer-container">
   <div className="container mx-auto px-4 flex justify-between items-center footer-flex">

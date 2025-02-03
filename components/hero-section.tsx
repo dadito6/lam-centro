@@ -34,7 +34,7 @@ export function HeroSection() {
         <Link
           href="https://api.whatsapp.com/send/?phone=2215256816&text&type=phone_number&app_absent=0"
           target="_blank"
-          className=" button  text-white py-4 px-6 rounded-lg hover:bg-green-600 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-6 buton-programa"
+          className=" button  text-white py-4 px-6 rounded-lg hover:bg-slate-800 transition w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mx-auto mt-6 buton-programa"
         >
           Programa tu rehabilitación
         </Link>
