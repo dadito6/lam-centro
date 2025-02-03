@@ -51,6 +51,7 @@ const team = [
   {
     name: "Celeste Zuccarelli",
     cargo: "Kinesiologa Centro LAM",
+    role: "Global Cyriax Institute Orthopaedic Medicine",
     image: "/kine5.jpg",
   },
 ];
