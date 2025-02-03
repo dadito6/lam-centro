@@ -6,19 +6,19 @@ const trabajos = [
   {
     title: "Rehabilitación Deportiva",
     description: "Recuperación de lesiones deportivas",
-    image: "/trabajo0.jpg",
+    image: "/trabajando2.jpg",
     link: "/detalle-trabajo/rehabilitacion-deportiva", // Ruta específica para este trabajo
   },
   {
     title: "Terapia de Dolor Crónico y Rehabilitación Postural",
     description: "Tratamientos personalizados",
-    image: "/trabajo1.jpg",
+    image: "/atendiendo1.jpg",
     link: "/detalle-trabajo/terapia-manual", // Ruta específica para este trabajo
   },
   {
     title: "Entrenamiento Funcional",
     description: "Mejora tu rendimiento",
-    image: "/trabajo2.jpg", 
+    image: "/trabajando3.jpg", 
     link: "/detalle-trabajo/entrenamiento-funcional", // Ruta específica para este trabajo
   },
 ];
@@ -45,7 +45,7 @@ export function WorkGallery() {
 
                 {/* Botón para redireccionar a la página de detalles */}
                 <Link href={work.link}>
-                  <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <button className="bg-blue-500 text-white px-4 py-2 rounded-lg text-sm shadow-lg hover:shadow-xl transition-shadow duration-300 boton-descubreS">
                     Descubre nuestros servicios
                   </button>
                 </Link>

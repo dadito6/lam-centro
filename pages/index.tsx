@@ -18,7 +18,7 @@ const especialidades = [
       "Tratamientos avanzados para el diagnóstico.",
       "Manejo de trastornos musculoesqueléticos.",
     ],
-    image: "/centroE.jpg", // Asegúrate de que esta imagen exista en la carpeta public
+    image: "/etgom2.jpg", // Asegúrate de que esta imagen exista en la carpeta public
     link: "/especialidad/ortopedia", // Ruta a la página de detalles
   },
   // Agrega más especialidades si es necesario
@@ -47,7 +47,7 @@ const Home = () => {
                       {/* Imagen */}
                       <div className="relative h-64 w-full">
                         <Image
-                          src="/centroE.jpg"
+                          src="/etgom2.png"
                           alt="Imagen de especialidad"
                           fill
                           sizes="(max-width: 768px) 100vw, 50vw" // Ajusta según tus necesidades

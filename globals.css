@@ -322,10 +322,14 @@ html {
   font-size: 2rem;
 }
 
+.boton-descubreS{
+  font-weight: 600;
+}
 
 
-
-
+.buton-programa {
+ background-color: #127B8E;
+}
 
 /* Estilos para la página de Sobre Nosotros */
 .sobre-nosotros-container {

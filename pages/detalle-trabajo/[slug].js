@@ -10,19 +10,19 @@ const DetalleTrabajo = () => {
   const trabajos = {
     "rehabilitacion-deportiva": {
       title: "Rehabilitación Deportiva",
-      image: "/trabajo0.jpg",
+      image: "/trabajando2.jpg",
     },
     "terapia-dolor-cronico": {
       title: "Terapia de Dolor Crónico y Rehabilitación Postural",
-      image: "/terapia-postural.jpg",
+      image: "/atendiendo2.jpg",
     },
     "terapia-manual": {
       title: "Terapia Manual",
-      image: "/trabajo1.jpg",
+      image: "/atendiendo2.jpg",
     },
     "entrenamiento-funcional": {
       title: "Entrenamiento Funcional",
-      image: "/trabajo2.jpg",
+      image: "/trabajando4.jpg",
     },
   };
 

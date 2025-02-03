@@ -24,14 +24,15 @@ const team = [
   },
   {
     name: "Leonardo Ferrando",
-    role: "Kinesiologo Centro LAM",
+    cargo: "Kinesiologo Centro LAM",
+    role : " Global Cyriax Institute Orthopaedic Medicine",
     image: "/kine6.jpg",
   },
   {
     name: "Daina Grosso",
     cargo: " Kinesiologa Centro LAM",
     titulo : "Lic en Kinesiologia y Fisiatrita",
-    role: " Kloga del hospital Alejandro Korn |  DNS clínico A B y C | Diplomatura en kinesiologia deportiva UNAJ ",
+    role: " Kloga del hospital Alejandro Korn |  Global Cyriax Institute Orthopaedic Medicine  |DNS clínico A B y C | Diplomatura en kinesiologia deportiva UNAJ ",
     image: "/kine3.jpg",
   },
   {
@@ -43,6 +44,8 @@ const team = [
   {
     name: "Tomas Éder",
     cargo: "Kinesiologo Centro LAM",
+    titulo : " Lic en Kinesiologia y Fisiatria ",
+    role : " Klgo Centro médico del diagnóstico City Bell  |  Diplomatura en Kinesiolgia deportiva UNAJ  |  Global Cyriax Institute Orthopaedic Medicine  |  Terapeuta Mep  |  Punción seca",
     image: "/kine4.jpg",
   },
   {
