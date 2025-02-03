@@ -28,7 +28,9 @@ const team = [
   },
   {
     name: "Daina Grosso",
-    role: "Kinesiologa",
+    titulo : "Lic en Kinesiologia y Fisiatrita",
+    role: " Kloga del hospital Alejandro Korn |  DNS clínico A B y C ",
+    Formación : "Diplomatura en kinesiologia deportiva UNAJ",
     image: "/kine3.jpg",
   },
   {
