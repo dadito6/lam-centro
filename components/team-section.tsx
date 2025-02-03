@@ -8,14 +8,14 @@ import { renderRoleWithFlags } from "../utils/renderRoleWithFlags";
 const team = [
   {
     name: "Ariel Ferrer",
-    titulo: "Kinesiologo U.N.C/U.C.R (Homologado)",
+    titulo: "Kinesiologo U.N.C/U.C.R (Homologado)  | Director Centro LAM",
     role:
-      "Kinesiologia deportiva/Entrenamiento |  Magister en ecografia MSK  |  Instructor Oficial ETGOM para Latinoamerica  |  MEP/ Microfenestracion (PMF) Director CentroLAM (La Plata. BsAs)",
+      "Kinesiologia deportiva/Entrenamiento |  Magister en ecografia MSK  |  Instructor Oficial ETGOM para Latinoamerica  |  MEP/ Microfenestracion (PMF) |",
     image: "/kine2.jpg",
   },
   {
     name: "Marcos Valent",
-    titulo: "Kinesiologo especializado en deporte UBA",
+    titulo: "Kinesiologo especializado en deporte UBA  | Co-Director Centro LAM",
     role:
       "Director centro de kinesiología y entrenamiento MVP gral. belgrano  |  Kinesiologo la Natividad polo team 🇦🇷  |  Kinesiologo Dubai polo team 🇬🇧 🇪🇸  |  Kinesiologo barto y jeta Castagnola 🇺🇸  |",
     Formación: "MEDICINA ORTOPÉDICA EUROPEA CYRIAX DNS FMS MEP",
