@@ -8,45 +8,46 @@ import { renderRoleWithFlags } from "../utils/renderRoleWithFlags";
 const team = [
   {
     name: "Ariel Ferrer",
-    titulo: "Kinesiologo U.N.C/U.C.R (Homologado)  | Director Centro LAM",
+    cargo: " Director Centro LAM  ",
+    titulo:  " Kinesiologo U.N.C/U.C.R (Homologado)   ",
     role:
       "Kinesiologia deportiva/Entrenamiento |  Magister en ecografia MSK  |  Instructor Oficial ETGOM para Latinoamerica  |  MEP/ Microfenestracion (PMF) |",
     image: "/kine2.jpg",
   },
   {
     name: "Marcos Valent",
-    titulo: "Kinesiologo especializado en deporte UBA  | Co-Director Centro LAM",
+    cargo: " Co-Directo Centro LAM",
+    titulo: " Kinesiologo especializado en deporte UBA ",
     role:
-      "Director centro de kinesiología y entrenamiento MVP gral. belgrano  |  Kinesiologo la Natividad polo team 🇦🇷  |  Kinesiologo Dubai polo team 🇬🇧 🇪🇸  |  Kinesiologo barto y jeta Castagnola 🇺🇸  |",
-    Formación: "MEDICINA ORTOPÉDICA EUROPEA CYRIAX DNS FMS MEP",
+      "Director centro de kinesiología y entrenamiento MVP gral. belgrano  |  Kinesiologo la Natividad polo team 🇦🇷  |  Kinesiologo Dubai polo team 🇬🇧 🇪🇸  |  Kinesiologo barto y jeta Castagnola 🇺🇸  |  MEDICINA ORTOPÉDICA EUROPEA CYRIAX DNS FMS MEP |",
     image: "/kine1.jpg",
   },
   {
     name: "Leonardo Ferrando",
-    role: "Kinesiologo",
+    role: "Kinesiologo Centro LAM",
     image: "/kine6.jpg",
   },
   {
     name: "Daina Grosso",
+    cargo: " Kinesiologa Centro LAM",
     titulo : "Lic en Kinesiologia y Fisiatrita",
-    role: " Kloga del hospital Alejandro Korn |  DNS clínico A B y C ",
-    Formación : "Diplomatura en kinesiologia deportiva UNAJ",
+    role: " Kloga del hospital Alejandro Korn |  DNS clínico A B y C | Diplomatura en kinesiologia deportiva UNAJ ",
     image: "/kine3.jpg",
   },
   {
     name: "Agustina Carosillo",
-    role: "  Kinesiologa plantel profesional de primera división fut fem Gelp  |  Kinesiologa en Centro LAM  |  Kinesiologa en CIK |  Profesora prácticas profesionales supervisadas UCALP",
-    Formación: " Módulo I-a “Introducción al razonamiento clínico”  |  Módulo I-b “Columna lumbar”Global Cyriax Institute Orthopaedic Medicine  |  Certificación MEP Sport y MEP Beauty  |  Programa de post grado columna lumbar The McKenzie Institute",
+    cargo: "Kinesiologa Centro LAM",
+    role: "  Kinesiologa plantel profesional de primera división fut fem Gelp  |  Kinesiologa en CIK |  Profesora prácticas profesionales supervisadas UCALP  |  Módulo I-a “Introducción al razonamiento clínico”  |  Módulo I-b “Columna lumbar”Global Cyriax Institute Orthopaedic Medicine  |  Certificación MEP Sport y MEP Beauty  |  Programa de post grado columna lumbar The McKenzie Institute",
     image: "/kine7.jpg",
   },
   {
     name: "Tomas Éder",
-    role: "Kinesiologo",
+    cargo: "Kinesiologo Centro LAM",
     image: "/kine4.jpg",
   },
   {
     name: "Celeste Zuccarelli",
-    role: "Kinesiologa",
+    cargo: "Kinesiologa Centro LAM",
     image: "/kine5.jpg",
   },
 ];
@@ -103,9 +104,14 @@ export function TeamSection() {
       <h3 className="font-bold text-xl mb-1 menu-kine">
         {member.name}
       </h3>
-      {member.titulo && (
+      {member.cargo && (
         <p className="text-muted-foreground menu-tipoTrabajo">
-          {member.titulo}
+          {member.cargo}
+        </p>
+      )}
+      {member.titulo && (
+         <p className="text-muted-foreground menu-tipoTrabajo">
+         {member.titulo}
         </p>
       )}
       <p className="text-muted-foreground menu-tipoTrabajo">
@@ -113,11 +119,7 @@ export function TeamSection() {
           ? renderRoleWithFlags(member.role)
           : member.role}
       </p>
-      {member.Formación && (
-        <p className="text-muted-foreground menu-tipoTrabajo">
-         {member.Formación}
-        </p>
-      )}
+      
     </CardContent>
   </Card>
 ))}
