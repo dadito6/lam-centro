@@ -319,6 +319,8 @@ html {
 
 
 
+
+
 /* Estilos para la página de Sobre Nosotros */
 .sobre-nosotros-container {
   max-width: 1200px;
@@ -358,7 +360,15 @@ html {
     font-size: 1rem;
   }
 
-}
 
+
+
+}
+.titulo-res{
+  font-weight: 900;
+  font-stretch: expanded;
+  padding: 4px;
+ 
+}
 
 

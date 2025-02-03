@@ -14,9 +14,9 @@ const especialidades = [
   {
     title: "Especialización en Medicina Ortopédica Europea",
     puntosClave: [
+      "Trabajamos en base a GCI Global cyriax institute",
       "Tratamientos avanzados para el diagnóstico.",
       "Manejo de trastornos musculoesqueléticos.",
-      "Técnicas basadas en evidencia.",
     ],
     image: "/centroE.jpg", // Asegúrate de que esta imagen exista en la carpeta public
     link: "/especialidad/ortopedia", // Ruta a la página de detalles

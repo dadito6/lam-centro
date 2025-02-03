@@ -34,9 +34,13 @@ export default function SobreNosotros() {
             <p className="text-gray-700 text-lg mb-4">
               Ofrecemos tratamientos personalizados, utilizando técnicas avanzadas y equipos de última generación.
             </p>
-            <p className="text-gray-700 text-lg">
-              ¡Tu salud es nuestra prioridad!
+            <p className="text-gray-700 text-lg titulo-res"  >
+             <strong> EVALUAMOS DIAGNOSTICAMOS SOLUCIONAMOS </strong>
+             </p>
+            <p  className="text-gray-700 text-lg titulo-res"> 
+            <strong> LAM</strong>
             </p>
+            
           </div>
         </div>
       </div>

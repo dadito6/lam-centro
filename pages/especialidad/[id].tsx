@@ -14,7 +14,7 @@ const EspecialidadDetalle = () => {
     {
       id: 'ortopedia',
       title: "Especialización en Medicina Ortopédica Europea",
-      description: "Tratamientos avanzados para el diagnóstico y manejo de trastornos musculoesqueléticos. Utilizamos técnicas basadas en evidencia para aliviar el dolor, restaurar la funcionalidad y mejorar la calidad de vida.",
+      description: "Es un método de trabajo ideado por el Dr. james Cyriax ( traumatologo Britanico 1904-1985) orientado hacia afecciones Ortopedicas y traumatologicas. El objetivo es alcanzar un diagnostico preciso basado en el razonamiento clinico de los datos obtenidos mediante un interrogatorio y examen fisico confiables. El metodo desarrollo opciones de tratamientos clasificados en movilizaciones, manipulaciones, tracciones, masaje transverso profundo y ultimamente se incorporo el tratamiento invasivo con microfenestracion percutanea para lesiones cronicas ligamentarias y tendinosas. Evaluar, razonar y tratar seria la mejor sintesis de nuestra forma de trabajo",
       puntosClave: [
         {
           title: "Técnicas avanzadas",
@@ -37,7 +37,7 @@ const EspecialidadDetalle = () => {
           icon: "fas fa-chart-line",
         },
       ],
-      image: "/centroE.jpg", // Ruta de la imagen en la carpeta public
+      image: "/etgom2.png", // Ruta de la imagen en la carpeta public
       referenciaLink: "https://cyriax.eu/", // Enlace a la página de referencia
       backgroundImage: "/etgo.jpg", // Ruta de la imagen de fondo
     },
