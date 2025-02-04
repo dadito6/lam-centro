@@ -16,7 +16,7 @@ const team = [
   },
   {
     name: "Marcos Valent",
-    cargo: " Co-Directo Centro LAM",
+    cargo: " Co-Director Centro LAM",
     titulo: " Kinesiologo especializado en deporte UBA ",
     role:
       "Director centro de kinesiología y entrenamiento MVP gral. belgrano  |  Kinesiologo la Natividad polo team 🇦🇷  |  Kinesiologo Dubai polo team 🇬🇧 🇪🇸  |  Kinesiologo barto y jeta Castagnola 🇺🇸  |  MEDICINA ORTOPÉDICA EUROPEA CYRIAX DNS FMS MEP |",
