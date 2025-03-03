@@ -57,7 +57,7 @@ export function MenuPage() {
                 </Link>
                
               </div>
-              <div className="border-l border-gray-900 h-48 w-1 border-2 " />
+          
               <div className="flex flex-col justify-center items-center ml-8 text-4xl font-bold md:text-3xl sm:text-2xl xs:text-xl">
                 <Link href="/especialidad/ortopedia" className="text-gray-800 hover:text-blue-600 mb-8">
                   Especialidad
