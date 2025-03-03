@@ -12,13 +12,13 @@ const trabajos = [
   {
     title: "Terapia de Dolor Crónico y Rehabilitación Postural",
     description: "Tratamientos personalizados",
-    image: "/atendiendo1.jpg",
+    image: "/atendiendo2.jpg",
     link: "/detalle-trabajo/terapia-manual", // Ruta específica para este trabajo
   },
   {
     title: "Entrenamiento Funcional",
     description: "Mejora tu rendimiento",
-    image: "/trabajando3.jpg", 
+    image: "/trabajando4.jpg", 
     link: "/detalle-trabajo/entrenamiento-funcional", // Ruta específica para este trabajo
   },
 ];
