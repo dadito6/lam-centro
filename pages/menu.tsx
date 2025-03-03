@@ -43,10 +43,10 @@ export function MenuPage() {
         <div className="container mx-auto p-4 ">
           <h1 className="text-5xl font-bold text-center mb-20">Menú</h1>
         
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center contenido-menu">
             <div className="flex flex-wrap justify-center">
-              <div className="flex flex-col justify-center items-center mr-8 text-4xl font-bold md:text-3xl sm:text-2xl xs:text-xl">
-                <Link href="/#trabajos" className="text-gray-800 hover:text-blue-600 mb-8">
+              <div className="flex flex-col justify-center items-center text-center mr-8 text-4xl font-bold md:text-3xl sm:text-2xl xs:text-xl">
+                <Link href="/#trabajos"  className="text-gray-800 hover:text-blue-600 mb-8">
                   Servicios
                 </Link>
                 <Link href="/#equipo" className="text-gray-800 hover:text-blue-600 mb-8">

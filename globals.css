@@ -229,6 +229,42 @@ html {
   }
 }
 
+
+@media (max-width: 768px) {
+  .contenido-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-menu {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 303px) {
+  .contenido-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contenido-menu > div {
+  margin-bottom: 20px;
+}
+.contenido-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+.contenido-menu.open {
+  transform: translateY(0);
+}
+
+.contenido-menu.close {
+  transform: translateY(-100%);
+}
+
 /* Estilos para el degradado en la imagen del HeroSection */
 .hero-image-fade {
   position: relative;
@@ -254,7 +290,7 @@ html {
 .menu-link {
   color: #38a169; /* Verde agradable */
   text-decoration: none;
-  
+
   transition: color 0.3s ease;
 }
 
