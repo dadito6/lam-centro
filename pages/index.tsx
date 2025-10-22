@@ -11,8 +11,12 @@ import { MapPin, Phone, Mail, Instagram, Menu, X, Clock } from 'lucide-react';
 
 // 🛠️ Componente auxiliar para el diseño de DOBLE IMAGEN (Full-Width y Sin Gap)
 // pages/index.tsx
+interface ImageProps {
+    image1Url:'/atendiendo1.jpg' ; // Use React.ReactNode for the icon component
+    image2Url :'/atendiendo2.jpg' ;
+  }
 
-const DoubleImageBlock = ({ image1Url, image2Url }) => (
+const DoubleImageBlock = ({ image1Url, image2Url }:ImageProps) => (
     <section className="w-full bg-white overflow-hidden py-0"> 
         <div className="w-full"> 
             
