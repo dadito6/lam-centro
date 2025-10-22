@@ -1,16 +1,40 @@
+/* ========================================= */
+/* globals.css */
+/* ========================================= */
+
+/* 1. DIRECTIVAS DE TAILWIND (OBLIGATORIAS) */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@900&display=swap');
+/* 2. IMPORTACIÓN DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* 3. AJUSTE GLOBAL UX: Habilitar Smooth Scroll (Solo una vez) */
+html {
+  scroll-behavior: smooth; 
+  overflow-x: hidden;
+}
+
+/* 🚨 CORRECCIÓN CLAVE: Fuerza el ancho completo en móvil 🚨 */
+/* Esto anula la restricción de 'max-width' de Tailwind en el breakpoint más pequeño (móvil) 
+   para que el contenido de texto pueda usar más espacio horizontal, y permite que 
+   las imágenes se vean a borde a borde cuando se usa 'w-full'. */
+.container {
+    width: 100%;
+    /* Dejamos que Tailwind maneje los max-width en sm, md, lg, etc., pero en base, el ancho es total. */
+    padding-left: 0 !important; 
+    padding-right: 0 !important;
+}
+
+/* 4. VARIABLES CSS Y TAILWIND LAYERS */
 :root {
-  --border: 214.3 31.8% 91.4%; /* Define el color de borde */
+  --border: 214.3 31.8% 91.4%; 
 }
 
 @layer base {
   .border-border {
-    border-color: var(--border); /* Aplica el color de borde */
+    border-color: var(--border); 
   }
 
   :root {
@@ -20,249 +44,34 @@
   }
 }
 
-/* Estilos generales */
+/* 5. ESTILOS BASE Y ANIMACIONES */
+
 body {
   margin: 0;
-  
   line-height: 1.5;
+  overflow-x: hidden;
+  background-color: #f8f8f8;
 }
+
+/* Transiciones de Imagen */
 img {
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
-
 img:hover {
-  transform: scale(1.05); /* Escala ligeramente la imagen al pasar el cursor */
-  opacity: 0.9; /* Reduce ligeramente la opacidad para un efecto más sutil */
-}
-.lam-image {
-  animation: load-lam 2s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.lam-image:hover {
-  transform: scale(1.05); /* Añade una escala suave al pasar el cursor */
-  opacity: 0.95;
-}
-/* Menú desplegable */
-.menu-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  transform: translateX(-100%);
-  opacity: 0;
-  transition: transform 0.5s ease, opacity 0.5s ease;
-  z-index: 1000;  /* Asegúrate de que esté por encima de otros elementos */
-}
-
-/* Cuando el menú está activo */
-.menu-container.show {
-  transform: translateX(0);
-  opacity: 1;
-}
-/* Asegúrate de que el contenedor del título y la imagen esté correctamente alineado */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative; /* Importante para los elementos que se mueven */
-  width: 100%;
-}
-
-
-
-
-/* Título "LAM" con la animación de movimiento */
-/* Animación para el título "Centro LAM" */
-.title-lam {
-  font-size: 2rem;
-  font-weight: bold;
-  position: relative;
-  animation: moveRight 1.5s ease-out forwards; /* Aplica la animación */
-}
-
-/* Animación de movimiento y rebote */
-@keyframes moveRight {
-  0% {
-    transform: translateX(-100%); /* Empieza a la izquierda fuera de la pantalla */
-  }
-  60% {
-    transform: translateX(30px); /* Pasa un poco de la posición final */
-  }
-  80% {
-    transform: translateX(-10px); /* Rebotar ligeramente hacia atrás */
-  }
-  100% {
-    transform: translateX(0); /* Llega a la posición final */
-  }
-}
-
-/* Estilo de la imagen */
-.lam-image {
-  animation: load-lam 2s ease-in-out;
-  transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.lam-image:hover {
   transform: scale(1.05);
-  opacity: 0.95;
+  opacity: 0.9;
 }
 
-
-
-.menu-container.menu-open {
-  transform: translateX(0);
-  opacity: 1;
+/* Animación de Título */
+.title-lam {
+  position: relative;
+  animation: moveRight 1.5s ease-out forwards;
 }
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/* Diseño responsivo */
-.section {
-  margin: 0 auto;
-  max-width: 90%; /* Ajusta al 90% del ancho disponible */
-  padding: 1rem;
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten */
-  justify-content: center;
-}
-
-.especialidades {
-  flex: 1 1 calc(33.33% - 1rem); /* 3 columnas en pantallas grandes */
-  margin: 0.5rem;
-  background-color: #ffffff;
-  border-radius: var(--radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.especialidades:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.especialidades h3 {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 768px) {
-  .especialidades {
-    flex: 1 1 calc(50% - 1rem); /* 2 columnas en pantallas medianas */
-  }
-}
-
-@media (max-width: 480px) {
-  .especialidades {
-    flex: 1 1 100%; /* 1 columna en pantallas pequeñas */
-  }
-}
-
-/* Botón "Agenda tu consulta" */
-.button {
-  color: #fff;
-  background-color: #3e8e41;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: var(--radius);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.button:hover {
-  background-color: #2c6f31;
-  transform: scale(1.05); /* Crece un poco al pasar el ratón */
-}
-
-.button:active {
-  transform: scale(0.95); /* Se encoge al presionar */
-}
-
-/* Solución para zoom en navegadores */
-html {
-  font-size: 100%;
-}
-@media (max-width: 1200px) {
-  html {
-    font-size: 95%;
-  }
-}
-@media (max-width: 768px) {
-  html {
-    font-size: 85%;
-  }
-}
-@media (max-width: 480px) {
-  html {
-    font-size: 80%;
-  }
-}
-
-/* Ajustes para el texto */
-.section h1, .section h2, .section p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .section h1, .section h2 {
-    font-size: 1.5rem; /* Aumenta el tamaño de los encabezados en pantallas medianas */
-  }
-  .section p {
-    font-size: 1rem; /* Mantén el texto legible */
-  }
-}
-
-@media (max-width: 480px) {
-  .section h1, .section h2 {
-    font-size: 1.8rem; /* Maximiza el uso de la pantalla */
-  }
-  .section p {
-    font-size: 1.1rem; /* Texto ligeramente más grande */
-  }
-}
-
-
-@media (max-width: 768px) {
-  .contenido-menu {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .contenido-menu {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 303px) {
-  .contenido-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.contenido-menu > div {
-  margin-bottom: 20px;
-}
-.contenido-menu {
-  transition: all 0.3s ease-in-out;
-}
-
-.contenido-menu.open {
-  transform: translateY(0);
-}
-
-.contenido-menu.close {
-  transform: translateY(-100%);
+@keyframes moveRight {
+  0% { transform: translateX(-100%); }
+  60% { transform: translateX(30px); }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
 }
 
 /* Estilos para el degradado en la imagen del HeroSection */
@@ -270,151 +79,25 @@ html {
   position: relative;
   overflow: hidden;
 }
-
 .hero-image-fade::after {
   content: '';
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 30%; /* Ajusta la altura del degradado */
+  height: 30%;
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 1), /* Color de fondo estático (blanco) */
-    rgba(255, 255, 255, 0)  /* Transparente en la parte superior */
+    rgba(255, 255, 255, 1), 
+    rgba(255, 255, 255, 0)
   );
 }
 
-
-/* Menú desplegable */
-.menu-link {
-  color: #38a169; /* Verde agradable */
-  text-decoration: none;
-
-  transition: color 0.3s ease;
-}
-
-.menu-link:hover {
-  color: #2f855a; /* Verde más oscuro al hacer hover */
-}
-
-.menu-link:active {
-  color: #276749; /* Verde aún más oscuro al hacer clic */
-}
-
-
-.footer-container{
-  font-family: "Lexend Giga",  sans-serif;
-  
-}
-.footer-container p{
-  font-size: 1rem;
-}
-
-.map-container {
-  background-color: #f7f7f7;
-  padding: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  transform: perspective(1000px);
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-/* Para el efecto de hover 3D */
-
-
+/* Clases de Contenido */
 .map-container:hover {
   transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
 }
 
-
-.map-container iframe {
-  border: none;
-  width: 100%;
-  height: 200px;
-  border-radius: 10px;
-}
-
-
-.menu-carousel {
-  margin-bottom: 20px;
-  color: #4a5568;
-}
-.menu-kine {
-  margin-bottom: 5px;
-  
-}
-.menu-tipoTrabajo{
-  margin-bottom: 30px;
-  color:gray;
-  font-size: 1.1rem;
-  
-}
-
-.titulo-nuestroE{
-  font-weight: 900;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2rem;
-}
-
-.boton-descubreS{
-  font-weight: 600;
-}
-
-
 .buton-programa {
- background-color: #127B8E;
+  background-color: #127B8E;
 }
-
-/* Estilos para la página de Sobre Nosotros */
-.sobre-nosotros-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
-}
-
-.sobre-nosotros-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.sobre-nosotros-text {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #4a5568;
-}
-
-.titulo-especialiad{
-  font-family: "Lexend Giga",sans-serif;
-  font-size: 2.8rem;
-}
-
-.descripcion-especialidad{
-  font-family: "Lexend Giga",sans-serif;
-  font-size: 1.6rem;
-}
-
-@media (max-width: 768px) {
-  .sobre-nosotros-container {
-    padding: 1rem;
-  }
-
-  .sobre-nosotros-text {
-    font-size: 1rem;
-  }
-
-
-
-
-}
-.titulo-res{
-  font-weight: 900;
-  font-stretch: expanded;
-  padding: 4px;
- 
-}
-
-
