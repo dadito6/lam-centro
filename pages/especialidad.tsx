@@ -69,9 +69,7 @@ const EspecialidadDetalle = () => {
       description: `“La Medicina Ortopédica Europea, desarrollada por el Dr. James Cyriax, se centra en la evaluación y tratamiento preciso de las lesiones músculo-esqueléticas.
 Su enfoque se basa en una historia clínica detallada, una exploración física minuciosa y en la identificación exacta del tejido lesionado (músculo, tendón, ligamento, cápsula o articulación).
 
-En nuestro centro, aplicamos este método para diagnosticar y tratar afecciones del sistema locomotor como tendinitis, esguinces, lumbalgias, cervicalgias o lesiones deportivas, combinando técnicas manuales específicas, movilización articular, y prescripción de ejercicios terapéuticos.
-
-El objetivo es recuperar la función, aliviar el dolor y prevenir recaídas, devolviendo al paciente la movilidad y bienestar de forma segura y eficaz.”`,
+En nuestro centro, aplicamos este método para diagnosticar y tratar afecciones del sistema locomotor como tendinitis, esguinces, lumbalgias, cervicalgias o lesiones deportivas, combinando técnicas manuales específicas, movilización articular, y prescripción de ejercicios terapéuticos.”`,
       puntosClave: [
         { title: "Técnicas avanzadas", description: "Uso de tecnologías modernas para diagnósticos precisos.", icon: "fas fa-microscope" },
         { title: "Enfoque personalizado", description: "Tratamientos adaptados a las necesidades individuales de cada paciente.", icon: "fas fa-user-md" },

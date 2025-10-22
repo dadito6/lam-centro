@@ -49,7 +49,7 @@ export default function Contactanos() {
           Contáctanos
         </h1>
         <p className="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Estamos aquí para ayudarte. Rellena el formulario o utiliza nuestros canales directos.
+          Estamos aquí para ayudarte. Rellena el formulario .
         </p>
 
         <div className="flex flex-wrap lg:flex-nowrap gap-12 bg-white p-6 md:p-10 rounded-xl shadow-lg border border-gray-100">
@@ -72,7 +72,7 @@ export default function Contactanos() {
             
             {/* Detalles de Contacto */}
             <ContactInfo 
-              icon={<Phone size={24} />} 
+              icon={<Phone size={24} className='text-lam' />} 
               label="Recepción" 
               value="+54 2215256816" 
               link="tel:+542215256816"
@@ -80,14 +80,14 @@ export default function Contactanos() {
             {/* ... otros ContactInfo ... */}
             
             <ContactInfo 
-              icon={<MapPin size={24} />} 
+              icon={<MapPin size={24} className='text-lam' />} 
               label="Ubicación" 
               value="Plaza 19 de Noviembre, La Plata" 
               link="https://www.google.com/maps/search/Centro+LAM+Kinesiologia+Y+Entrenamiento"
             />
 
             <ContactInfo 
-              icon={<Instagram size={24} />} 
+              icon={<Instagram size={24} className='text-lam' />} 
               label="Redes Sociales" 
               value="@lamcentro" 
               link="https://www.instagram.com/lamcentro/"
@@ -124,7 +124,7 @@ export default function Contactanos() {
               />
               <button 
                 type="submit" 
-                className="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
+                className="w-full bg-lam text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
               >
                 Enviar Consulta
               </button>

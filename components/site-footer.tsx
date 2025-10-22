@@ -15,19 +15,20 @@ const SiteFooter = () => (
         </h3>
 
         {/* HORARIOS */}
-        <div className="flex flex-col items-center mb-6">
-          <Clock size={32} className="text-agua mb-3" />
-          <p className="text-lg leading-relaxed">
-            <span className="block font-semibold text-white">
-              Lunes, Miércoles y Viernes:  08:00 a 20:00hs
-            </span>
-          </p>
-          <p className="text-lg leading-relaxed mt-1">
-            <span className="block font-semibold text-white">
-              Martes y Jueves:  10:00 a 20:00hs
-            </span>
-          
-          </p>
+        <div className="flex items-start justify-center mb-6 max-w-md mx-auto">
+          <Clock size={26} className="text-agua mr-3 flex-shrink-0 mt-1" />
+          <div className="text-left">
+            <p className="text-lg leading-relaxed">
+              <span className="font-semibold text-white">
+                Lunes, Miércoles y Viernes: 08:00 a 20:00hs
+              </span>
+            </p>
+            <p className="text-lg leading-relaxed mt-1">
+              <span className="font-semibold text-white">
+                Martes y Jueves: 10:00 a 20:00hs
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* TELÉFONO */}
@@ -53,8 +54,8 @@ const SiteFooter = () => (
           <Image
             src="/lam.png"
             alt="Logo LAM"
-            width={55}
-            height={55}
+            width={42}
+            height={42}
             className="mr-3 rounded-full"
           />
           <h2 className="text-3xl font-bold uppercase tracking-wide text-white">
