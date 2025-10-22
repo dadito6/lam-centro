@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
-import { SiteHeader } from "@/components/site-header";
+import SiteHeader  from "@/components/site-header";
 
 export default function SobreNosotros() {
   return (
