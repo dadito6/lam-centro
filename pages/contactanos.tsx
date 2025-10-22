@@ -11,31 +11,7 @@ interface ContactInfoProps {
   link?: string; // The '?' makes the link prop optional
 }
 
-// 1. Componente Auxiliar: Información de Contacto
-// Apply the interface to the component's props
-const ContactInfo = ({ icon, label, value, link }: ContactInfoProps) => (
-  <div className="flex items-start mb-6">
-    <div className="text-blue-600 mr-4 mt-1 flex-shrink-0">
-      {icon}
-    </div>
-    <div className="flex flex-col">
-      <p className="font-semibold text-gray-800 dark:text-gray-200">{label}</p>
-      {/* Conditionally render as a link or as plain text */}
-      {link ? (
-        <a 
-          href={link} 
-          className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors"
-          target="_blank" // Consider opening links in a new tab
-          rel="noopener noreferrer"
-        >
-          {value}
-        </a>
-      ) : (
-        <p className="text-gray-600 dark:text-gray-400">{value}</p>
-      )}
-    </div>
-  </div>
-);
+
 // 1. Componente Auxiliar: Información de Contacto
 const ContactInfo = ({ icon, label, value, link }:ContactInfoProps) => (
   <div className="flex items-start mb-6">
