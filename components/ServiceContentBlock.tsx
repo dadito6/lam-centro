@@ -1,6 +1,5 @@
 // components/ServiceContentBlock.tsx
 
-import Link from 'next/link';
 import Image from 'next/image';
 
 interface ServiceContentBlockProps {
@@ -20,43 +19,39 @@ export function ServiceContentBlock({
   const isFirstBlock = number === "01"; 
 
   return (
-    // 🚨 AJUSTE DE PADDING: Aumentamos el padding vertical (py-24)
-    <section className="relative w-full bg-white py-24 md:py-40 overflow-hidden border-b border-gray-100">
+    <section className="relative w-full bg-white py-16 md:py-20 overflow-hidden">
       
-      {/* Contenedor del Texto (limitado por .container) */}
-      <div className="container mx-auto relative z-10">
+      {/* Contenedor del Texto */}
+      <div className="w-full px-6 md:px-12 lg:px-16 mx-auto relative z-10">
         
-        {/* Número Difuminado (Se mantiene) */}
+        {/* Número Difuminado en el fondo */}
         <div 
-          className="absolute inset-0 flex items-start justify-center font-extrabold pointer-events-none"
+          className="absolute left-0 top-0 font-extrabold pointer-events-none opacity-10"
           style={{ 
-            lineHeight: 1, 
-            top: '0', 
-            color: 'rgb(107 114 128 / 0.25)', 
-            fontSize: '15vw', 
-            paddingTop: '2rem' 
+            fontSize: 'clamp(8rem, 15vw, 12rem)',
+            lineHeight: '1',
+            color: '#127B8E'
           }} 
         >
           {number}
         </div>
 
-        {/* Contenido de Texto: Centrado y con Énfasis */}
-        {/* 🚨 CLAVE: Añadimos px-6/md:px-4 para espaciar el texto del borde en móvil */}
-        <div className="max-w-5xl mx-auto text-center relative z-20 px-6 md:px-4 pt-10"> 
+        {/* Contenido de Texto: Más espaciado y énfasis */}
+        <div className="max-w-4xl mx-auto text-center relative z-20"> 
           
-          {/* Título: Ajuste de tamaño responsivo para visibilidad en móvil (text-4xl) */}
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-8 md:text-7xl leading-tight">
+          {/* Título: Más grande y con mejor espaciado */}
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight tracking-tight">
             {title}
           </h2>
 
-          {/* Párrafo: Estilo Forza y ancho expandido */}
+          {/* Párrafo: Más espaciado entre líneas */}
           <p 
-            className="mb-10 font-robotoC font-medium mx-auto" 
+            className="font-robotoC font-normal text-gray-600 mx-auto leading-loose"
             style={{ 
-              color: '#9c9c9c', 
-              lineHeight: '27px', 
-              fontSize: '17px', // Tamaño exacto de Forza
-              maxWidth: '950px' 
+              fontSize: '18px',
+              lineHeight: '32px', // Más espaciado
+              maxWidth: '850px',
+              letterSpacing: '0.01em'
             }}
           >
             {description}
@@ -64,19 +59,18 @@ export function ServiceContentBlock({
         </div>
       </div>
       
-      {/* BLOQUE DE IMAGEN (Full Width) */}
-      {/* 🚨 CLAVE: Quitamos px-0 y dejamos el control de margen a la sección */}
-      <div className="w-full mt-10 md:mt-16"> 
-          <div className="relative h-[400px] md:h-[600px] w-full mx-auto rounded-none md:rounded-lg overflow-hidden shadow-2xl">
-              <Image
-                  src={imageUrl}
-                  alt={title}
-                  fill
-                  className="object-cover transition-transform duration-700 hover:scale-105"
-                  sizes="100vw"
-                  priority={isFirstBlock} 
-              />
-          </div>
+      {/* BLOQUE DE IMAGEN FULL WIDTH - Sin márgenes */}
+      <div className="w-full mt-12 md:mt-16"> 
+        <div className="relative h-[400px] md:h-[550px] lg:h-[650px] w-full overflow-hidden">
+          <Image
+            src={imageUrl}
+            alt={title}
+            fill
+            className="object-cover transition-transform duration-700 hover:scale-105"
+            sizes="100vw"
+            priority={isFirstBlock} 
+          />
+        </div>
       </div>
     </section>
   );
