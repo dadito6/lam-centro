@@ -89,7 +89,7 @@ const Home = () => {
             <ServiceContentBlock
                 title="Evaluación Postural y Prevención"
                 description="Más allá de la lesión, nos enfocamos en prevenir. Nuestro enfoque incluye el estudio de la pisada, análisis postural y planes de ejercicio correctivo para mantener la columna y articulaciones saludables a largo plazo."
-                imageUrl="/trabajando2.jpg" 
+                imageUrl="/columna.jpg" 
                 number="03"
             />
 
@@ -100,7 +100,16 @@ const Home = () => {
                 number="04"
             />
 
+<ServiceContentBlock
+                title="Ondas de Choque"
+                description="Terapia para tratar la fascitis plantar, tendinitis pubalgias y edema óseo.
 
+Las ondas de Choque son ondas acústicas que brindan una gran cantidad de energía no invasiva , segura y ambulatoria que promueve la analgesia, el aumento de la reparación y la regeneración de la piel, músculos, tendones y hueso a través de equipo BTL de última tecnología , especializado para el dolor de las afecciones musculoesqueléticas.
+
+Kinesiólogos certificados en Ondas de Choque por la ONLAT"
+                imageUrl="/ondas-choque.jpg" 
+                number="05"
+            />
 
         </main>
       </div>

@@ -15,14 +15,13 @@ const NuestroEquipo = () => {
         En Centro LAM trabajamos con pasión, profesionalismo y compromiso.
       </p>
 
-      {/* VIDEO LOCAL - SIN BORDES */}
-      <div className="w-full max-w-xs md:max-w-sm rounded-2xl overflow-hidden shadow-2xl bg-gray-900 aspect-[9/16] relative">
+      {/* VIDEO LOCAL - CON FONDO BLANCO DIFUMINADO */}
+      <div className="w-full max-w-xs md:max-w-sm rounded-2xl overflow-hidden shadow-lg bg-white aspect-[9/16] relative">
         <video
           autoPlay
           muted
           loop
           playsInline
-          // 🔥 SOLUCIÓN: object-cover + scale para eliminar bordes incrustados
           className="w-full h-full object-cover scale-105"
         >
           <source src="/video/nuestro-equipo.mp4" type="video/mp4" />
