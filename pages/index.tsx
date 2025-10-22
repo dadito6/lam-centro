@@ -12,7 +12,7 @@ import { MapPin, Phone, Mail, Instagram, Menu, X, Clock } from 'lucide-react';
 // 🛠️ Componente auxiliar para el diseño de DOBLE IMAGEN (Full-Width y Sin Gap)
 // pages/index.tsx
 interface ImageProps {
-    image1Url:'/atendiendo1.jpg' ; // Use React.ReactNode for the icon component
+    image1Url:'/trabajando6.jpg' ; // Use React.ReactNode for the icon component
     image2Url :'/atendiendo2.jpg' ;
   }
 
