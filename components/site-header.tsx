@@ -12,8 +12,8 @@ export default function SiteHeader() {
   const links = [
     { href: "/", label: "Home" },
     { href: "/especialidad?id=ortopedia", label: "Especialidad" },
-    { href: "/equipo", label: "Nuestro equipo" },
-    { href: "/testimonios", label: "Testimonios" },
+    { href: "/nuestro-equipo", label: "Nuestro equipo" },
+    { href: "/sobre-nosotros", label: "Nosotros" },
     { href: "/contactanos", label: "Contáctanos", highlight: true },
   ];
 
@@ -34,7 +34,7 @@ export default function SiteHeader() {
             className="rounded-full object-contain"
           />
           <span className="font-semibold text-2xl md:text-3xl tracking-tight text-gray-800 font-['Poppins']">
-            CENTRO <span className="text-emerald-600">LAM</span>
+            CENTRO <span className="text-lam">LAM</span>
           </span>
         </Link>
 

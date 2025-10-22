@@ -9,15 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      // 🚨 Sección para agregar fuentes personalizadas 🚨
+      // 🚨 Fuentes personalizadas
       fontFamily: {
-        // 'robotoC' será tu nueva clase CSS (ej: class="font-robotoC")
         robotoC: ['Roboto Condensed', 'sans-serif'],
       },
-      // Puedes agregar el color gris exacto si lo necesitas a menudo
+      
+      // 🎨 Colores personalizados
       colors: {
-        'forza-gray': '#9c9c9c', 
-      }
+        'forza-gray': '#9c9c9c',
+        'lam': '#00B8B0',        // Verde agua institucional (principal)
+        'lam-dark': '#009A93',   // Versión más oscura para hover o contraste
+      },
     },
   },
   plugins: [],

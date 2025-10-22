@@ -68,12 +68,12 @@ const Home = () => {
                 title="Kinesiología Avanzada y Readaptación"
                 description="Nuestros tratamientos se centran en devolver la función completa. Usamos la Medicina Ortopédica Europea (GCI Cyriax) para un diagnóstico preciso y terapias manuales y funcionales para asegurar una recuperación óptima y sin recaídas. Esta es la base de nuestro trabajo y el primer paso hacia tu bienestar."
                 number="01" 
-                imageUrl="/trabajando1.jpg" 
+                imageUrl="/trabajando5.jpg" 
             />
 
           {/* 3. BLOQUE DE DOBLE IMAGEN (APILADAS Y FULL-WIDTH) */}
             <DoubleImageBlock
-                image1Url="/atendiendo1.jpg" 
+                image1Url="/trabajando6.jpg" 
                 image2Url="/atendiendo2.jpg" 
             />
 
@@ -96,7 +96,7 @@ const Home = () => {
 <ServiceContentBlock
                 title="Traumatologia"
                 description="Especialidad médica que se encarga del cuidado, estudio y rehabilitación de la forma y función de las extremidades, columna y estructuras asociadas. Es una especialidad que abarca más allá del campo de lesiones traumáticas; contempla también el estudio de patologías congénitas"
-                imageUrl="/trabajando2.jpg" 
+                imageUrl="/MEP2.jpg" 
                 number="04"
             />
 
