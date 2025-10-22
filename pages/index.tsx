@@ -101,79 +101,7 @@ const Home = () => {
             />
 
 
-          {/* 7. FOOTER (Se mantiene) */}
-       {/* 7. FOOTER (Optimizado para Diseño y Responsividad) */}
-    <footer className="bg-gray-900 py-10 md:py-16 text-white footer-container">
-            
-            {/* Contenedor Principal: Centrado y Columna Simple en Móvil */}
-            <div className="container mx-auto px-6 flex flex-col items-center justify-center text-center">
-              
-                {/* COLUMNA 1: CONTACTO Y HORARIOS (Centrado) */}
-              <div className="text-sm md:text-base mb-10 md:w-full">
-                <h3 className="text-xl font-bold mb-4 uppercase text-blue-400">Contáctanos</h3>
-                
-                {/* HORARIOS */}
-                <div className="flex flex-col items-center mb-4">
-                    <Clock size={18} className="text-blue-400 mb-1" />
-                    
-                    <p className="mb-1 font-open-sans">Lunes, Miércoles y Viernes: 08:00 A 20:00hs</p>
-                    <p className="mb-4 font-open-sans">Martes y Jueves: 10:00 am - 20:00hs</p>
-                </div>
-                
-                {/* TELÉFONO */}
-                <div className="flex items-center justify-center mb-4">
-                    <Phone size={18} className="text-blue-400 mr-2" />
-                    <p className="font-open-sans">
-                        <strong className="text-white">Recepcion:</strong> +54 2215256816
-                    </p>
-                </div>
 
-                {/* UBICACIÓN */}
-                <div className="flex items-center justify-center">
-                    <MapPin size={18} className="text-blue-400 mr-2" />
-                    <p className="text-sm text-gray-400">
-                        <strong className="text-white"></strong> Plaza 19 de Noviembre e/ Diag. 96 y 25 (44 y 25) La Plata Bs.As.
-                    </p>
-                </div>
-              </div>
-              
-                {/* 🚨 COLUMNA 2: LOGO y RRSS (Diseño Limpio y Centrado) 🚨 */}
-                <div className="w-full flex flex-col items-center justify-center mt-8 pt-4">
-    
-    {/* LOGO Y TÍTULO */}
-    <div className="flex items-center mb-6">
-        <Image
-            src="/lam.png"
-            alt="Logo LAM"
-            width={60}
-            height={60} // Usamos 60x60 para un logo más grande
-            className="h-10 w-10 mr-3" // Aumentamos el margen (mr-3) para separar sutilmente el texto
-        />
-        <h2 className="text-2xl font-bold text-white uppercase">CENTRO LAM</h2>
-    </div>
-                    
-                    {/* TÍTULO "SÍGUENOS" */}
-                    <p className="text-lg font-semibold text-gray-500 mb-3 uppercase">Síguenos</p>
-
-                    {/* ENLACE DE REDES SOCIALES (Estilo Limpio) */}
-                    <Link 
-                        href="https://www.instagram.com/lamcentro/"
-                        target="_blank"
-                        className="flex items-center text-white hover:text-blue-400 transition duration-300 text-base"
-                        aria-label="Síguenos en Instagram"
-                    >
-                        <Instagram size={28} className="text-white hover:text-blue-400 transition" />
-                    </Link>
-                </div>
-
-            </div>
-
-            {/* SECCIÓN INFERIOR: Derechos de autor */}
-            <div className="container mx-auto px-6 mt-8 border-t border-gray-700 pt-4 text-center">
-                <p className="text-xs text-gray-500">© {new Date().getFullYear()} Centro LAM. Todos los derechos reservados.</p>
-            </div>
-
-          </footer>
         </main>
       </div>
     </div>

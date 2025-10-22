@@ -4,6 +4,7 @@ import Head from 'next/head';
 import  SiteHeader  from '@/components/site-header'; 
 import { WhatsAppButton } from '@/components/wpp-boton'; 
 import '../globals.css'; // Asegúrate de importar el archivo de estilos
+import SiteFooter from "@/components/site-footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,6 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         
         {/* El botón flotante de WhatsApp siempre visible */}
         <WhatsAppButton />
+  <SiteFooter />
       </div>
     </div>
   );
