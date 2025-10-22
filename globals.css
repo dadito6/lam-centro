@@ -12,21 +12,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
-/* 3. AJUSTE GLOBAL UX: Habilitar Smooth Scroll (Solo una vez) */
+/* 3. AJUSTE GLOBAL UX: Scroll Suave y Optimizado */
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajusta según altura de tu header */
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* 🚨 CORRECCIÓN CLAVE: Fuerza el ancho completo en móvil 🚨 */
-/* Esto anula la restricción de 'max-width' de Tailwind en el breakpoint más pequeño (móvil) 
-   para que el contenido de texto pueda usar más espacio horizontal, y permite que 
-   las imágenes se vean a borde a borde cuando se usa 'w-full'. */
 .container {
-    width: 100%;
-    /* Dejamos que Tailwind maneje los max-width en sm, md, lg, etc., pero en base, el ancho es total. */
-    padding-left: 0 !important; 
-    padding-right: 0 !important;
+  width: 100%;
+  padding-left: 0 !important; 
+  padding-right: 0 !important;
 }
 
 /* 4. VARIABLES CSS Y TAILWIND LAYERS */
@@ -53,11 +52,27 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background-color: #f8f8f8;
+  /* Mejora el scroll en móviles */
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Transiciones de Imagen */
+/* Optimización para elementos interactivos */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Transiciones suaves para elementos interactivos */
+a, button, [role="button"] {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Transiciones de Imagen - Mejoradas */
 img {
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 img:hover {
   transform: scale(1.05);
@@ -98,8 +113,46 @@ img:hover {
 /* Clases de Contenido */
 .map-container:hover {
   transform: perspective(1000px) rotateX(2deg) rotateY(2deg) scale(1.02);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buton-programa {
   background-color: #127B8E;
+}
+
+/* 6. OPTIMIZACIONES DE PERFORMANCE */
+
+/* Hardware acceleration para mejor performance */
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Mejora el rendimiento del scroll con will-change */
+.animated-gradient {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Contenedores con scroll optimizado */
+.scroll-container {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Animación suave de aparición */
+.fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
